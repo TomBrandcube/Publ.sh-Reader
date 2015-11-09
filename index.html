@@ -33,16 +33,24 @@
 		<div class="mobile-nav">
 		</div>
 		<!-- Mobile intro screen -->
-		<div class="mobile-intro">
-			Hoi 2
-		</div>
+		<a href="#"><div class="mobile-intro">
+		</div></a>
 		<!-- Content Desktop -->
 		<div class="affix-content">
-			<div class="container">
-				<!-- hier content -->
+			<div class="publicatie">
 			</div>
+			<!-- hier content -->
 		</div>	
 	</div>
+	
+<script type="text/javascript">
+// toggle mobile opacity intro
+ $(document).ready(function () {
+        $('.mobile-intro').click(function () {
+            $('.mobile-intro').toggleClass('fade');
+        });
+    });
+</script>
 <script>
 	// Voeg de class active toe bij klik
 	$('.sidebar-nav ul li').click(function(e) {
