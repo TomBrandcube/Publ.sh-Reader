@@ -49,8 +49,8 @@ html,body {
 	position: relative;
 }
 .sidebar-nav ul li span {
-	width:20px;
-	height:20px;
+	width:30px;
+	height:30px;
 	background-position: center center;
 	background-repeat: no-repeat;
 	margin:0;
@@ -60,13 +60,34 @@ html,body {
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
+.sidebar-nav ul li.active {
+	border-top:2px solid #E1E3EA;
+	border-bottom:2px solid #E1E3EA;
+	background-color:#FCFCFC;
+	border-right:none;
+	width:103%;
+}
+.sidebar-nav ul li.no-top {
+	border-top:none!important;
+}
+
 .sidebar-nav ul li.nightmode {
 	position: absolute;
 	bottom:10px;
+	border:none!important;
+	background-color:#FFF!important;
+	width:100%!important;
 }
 
 .sidebar-nav ul li span.nightmodeIcon {
 	width:22px;
 	height:22px;
 }
+/* Hide vertical sidebar on mobile */
+@media screen and (max-width: 767px) {
+	.sidebar-nav {
+		display:none;
+	}
+}
+/* Show mobile incoming page */
 
